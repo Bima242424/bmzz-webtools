@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BimzTools - Download Mod APK & Tools</title>
+    
+    <!-- Google AdSense Main Script (Ganti ca-pub ID sesuai milikmu) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3637362406938354" crossorigin="anonymous"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19;
+            color: #e2e8f0;
+        }
+
+        .font-cyber {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .font-sub {
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .neon-border-purple {
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.4), inset 0 0 10px rgba(168, 85, 247, 0.2);
+        }
+
+        .neon-text-cyan {
+            text-shadow: 0 0 10px rgba(6, 182, 212, 0.8);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #06b6d4;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="fixed inset-0 z-50 bg-slate-950 flex flex-col items-center justify-center transition-opacity duration-500">
+        <div class="relative flex flex-col items-center">
+            <div class="w-24 h-24 border-4 border-cyan-500/30 border-t-cyan-400 rounded-full animate-spin mb-6"></div>
+            <div class="absolute top-6 w-12 h-12 bg-cyan-500/20 rounded-full filter blur-xl animate-pulse"></div>
+            <h1 class="font-cyber text-3xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 neon-text-cyan">
+                BIMZ<span class="text-white">TOOLS</span>
+            </h1>
+            <p class="font-sub text-slate-400 mt-2 text-lg tracking-widest">LOADING CORE SYSTEM...</p>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-30 bg-slate-900/90 backdrop-blur-md border-b border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 cursor-pointer" onclick="navigateTo('home')">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 p-0.5 flex items-center justify-center shadow-lg shadow-cyan-500/30">
+                        <div class="w-full h-full bg-slate-900 rounded-[7px] flex items-center justify-center">
+                            <i data-lucide="cpu" class="w-6 h-6 text-cyan-400"></i>
+                        </div>
+                    </div>
+                    <span class="font-cyber font-bold text-xl tracking-wider text-white">
+                        BIMZ<span class="text-cyan-400">TOOLS</span>
+                    </span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center space-x-3">
+                    <button onclick="openAdminAuthModal()" class="flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white px-4 py-2 rounded-lg font-sub font-semibold tracking-wide shadow-md shadow-purple-600/30 transition hover:scale-105 active:scale-95">
+                        <i data-lucide="shield-check" class="w-4 h-4"></i>
+                        <span>ADMIN PANEL</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 mt-4 w-full flex justify-center overflow-hidden">
+        <div class="bg-slate-900/50 border border-slate-800 border-dashed rounded-xl p-3 text-center text-xs text-slate-500 tracking-wider w-full">
+            [ ADSENSE AD SPACE - RESPONSIVE BANNER ]
+            <!-- Google AdSense Header Banner Unit -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3637362406938354"
+                 data-ad-slot="5267341292"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-grow w-full">
+        
+        <!-- VIEW: HOME / APK LIST -->
+        <section id="view-home" class="space-y-6">
+            <!-- Hero / Search Section -->
+            <div class="bg-gradient-to-r from-slate-900 via-slate-900 to-cyan-950/40 p-6 sm:p-8 rounded-2xl border border-cyan-500/30 relative overflow-hidden shadow-2xl">
+                <div class="relative z-10 max-w-2xl">
+                    <h2 class="font-cyber text-2xl sm:text-3xl font-extrabold text-white mb-2">
+                        BEST MOD APK & GAME TOOLS
+                    </h2>
+                    <p class="text-slate-400 text-sm sm:text-base mb-6 font-sub">
+                        Download apk mod dan tools premium secara gratis dan aman.
+                    </p>
+
+                    <!-- Search Input -->
+                    <div class="relative">
+                        <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-400 w-5 h-5"></i>
+                        <input type="text" id="search-input" oninput="filterApps()" placeholder="Cari aplikasi atau tools..." 
+                            class="w-full bg-slate-950/80 border border-cyan-500/40 rounded-xl py-3 pl-12 pr-4 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex items-center space-x-2 overflow-x-auto pb-2 scrollbar-none" id="category-bar">
+                <button onclick="setCategory('ALL')" class="cat-btn active bg-cyan-500 text-slate-950 px-4 py-2 rounded-lg font-sub font-bold text-sm tracking-wider whitespace-nowrap transition">
+                    SEMUA
+                </button>
+                <button onclick="setCategory('GAME')" class="cat-btn bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 px-4 py-2 rounded-lg font-sub font-bold text-sm tracking-wider whitespace-nowrap transition">
+                     MOD
+                </button>
+                <button onclick="setCategory('TOOLS')" class="cat-btn bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 px-4 py-2 rounded-lg font-sub font-bold text-sm tracking-wider whitespace-nowrap transition">
+                    TOOLS & UTILITIES
+                </button>
+                <button onclick="setCategory('PREMIUM')" class="cat-btn bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 px-4 py-2 rounded-lg font-sub font-bold text-sm tracking-wider whitespace-nowrap transition">
+                    PREMIUM APPS
+                </button>
+            </div>
+
+            <!-- APK Grid Container -->
+            <div id="apk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dynamically Populated -->
+            </div>
+
+            <div id="no-result" class="hidden text-center py-12">
+                <i data-lucide="ghost" class="w-16 h-16 text-slate-600 mx-auto mb-3"></i>
+                <p class="text-slate-400 font-sub text-lg">Aplikasi tidak ditemukan.</p>
+            </div>
+        </section>
+
+        <!-- VIEW: DOWNLOAD DETAIL & REDIRECTION TIMER -->
+        <section id="view-detail" class="hidden max-w-3xl mx-auto space-y-6">
+            <button onclick="navigateTo('home')" class="flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 font-sub font-semibold">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                <span>Kembali ke Katalog</span>
+            </button>
+
+            <!-- App Details Box -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl relative">
+                <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                    <img id="detail-icon" src="" alt="APK Icon" class="w-24 h-24 rounded-2xl object-cover border-2 border-cyan-500/40 shadow-lg shadow-cyan-500/20">
+                    <div class="text-center sm:text-left flex-1">
+                        <h2 id="detail-title" class="font-cyber text-2xl font-bold text-white"></h2>
+                        <div class="flex flex-wrap justify-center sm:justify-start gap-2 mt-2">
+                            <span id="detail-version" class="bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs px-2.5 py-1 rounded-md font-mono"></span>
+                            <span id="detail-size" class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md font-mono"></span>
+                            <span id="detail-category" class="bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs px-2.5 py-1 rounded-md font-mono"></span>
+                        </div>
+                        <p id="detail-desc" class="text-slate-400 text-sm mt-3 leading-relaxed"></p>
+                    </div>
+                </div>
+
+                <div class="my-6 bg-slate-950/60 border border-slate-800 border-dashed rounded-xl p-3 text-center text-xs text-slate-500 overflow-hidden">
+                    [ ADVERTISEMENT BANNER ]
+                    <!-- Google AdSense In-Article / Detail Unit -->
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-3637362406938354"
+                         data-ad-slot="5267341292"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!-- Download Countdown & Redirect Controller -->
+                <div class="bg-slate-950 border border-cyan-500/30 rounded-xl p-6 text-center space-y-4">
+                    <div id="download-idle-state">
+                        <button onclick="startDownloadProcess()" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-cyber font-black py-4 rounded-xl shadow-lg shadow-cyan-500/30 transition transform hover:scale-[1.01] active:scale-95 flex items-center justify-center space-x-2 text-lg">
+                            <i data-lucide="download" class="w-6 h-6"></i>
+                            <span>DOWNLOAD NOW</span>
+                        </button>
+                    </div>
+
+                    <div id="download-active-state" class="hidden space-y-4">
+                        <div class="flex flex-col items-center justify-center space-y-2">
+                            <div id="timer-ring" class="w-16 h-16 rounded-full border-4 border-cyan-500/30 border-t-cyan-400 animate-spin flex items-center justify-center">
+                            </div>
+                            <span id="timer-seconds" class="font-cyber text-3xl font-extrabold text-cyan-400">5</span>
+                        </div>
+                        <p id="timer-status" class="text-slate-300 font-sub text-base font-medium">
+                            Sedang menyiapkan file... Mohon tunggu <span class="text-cyan-400 font-bold">5 detik</span>
+                        </p>
+                    </div>
+
+                    <div id="download-completed-state" class="hidden space-y-3">
+                        <div class="text-emerald-400 font-sub font-bold text-lg flex items-center justify-center space-x-2">
+                            <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                            <span>Mengarahkan ke Web Download...</span>
+                        </div>
+                        <a id="manual-download-btn" href="#" target="_blank" class="inline-block text-xs text-cyan-400 hover:underline">
+                            Klik di sini jika web tidak otomatis terbuka
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: ADMIN MANAGER -->
+        <section id="view-admin" class="hidden space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div>
+                    <h2 class="font-cyber text-2xl font-bold text-white flex items-center gap-2">
+                        <i data-lucide="settings" class="text-purple-400"></i> ADMIN MANAGEMENT
+                    </h2>
+                    <p class="text-xs text-slate-400 font-sub mt-1">Kelola katalog aplikasi, link download, dan detail item.</p>
+                </div>
+                <button onclick="lockAdminSession()" class="bg-red-500/20 text-red-400 hover:bg-red-500/30 border border-red-500/30 px-3 py-1.5 rounded-lg text-xs font-sub font-bold transition">
+                    LOCK / EXIT ADMIN
+                </button>
+            </div>
+
+            <!-- Add/Edit Form -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
+                <h3 id="form-title" class="font-sub font-bold text-lg text-cyan-400">Tambah APK Baru</h3>
+                <input type="hidden" id="admin-apk-id">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-sub font-semibold text-slate-400 mb-1">Nama APK / Tool</label>
+                        <input type="text" id="admin-title" placeholder="e.g. MLBB Injector V2" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-cyan-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-sub font-semibold text-slate-400 mb-1">Kategori</label>
+                        <select id="admin-category" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-cyan-500">
+                            <option value="GAME">GAMES MOD</option>
+                            <option value="TOOLS">TOOLS & UTILITIES</option>
+                            <option value="PREMIUM">PREMIUM APPS</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-sub font-semibold text-slate-400 mb-1">Versi</label>
+                        <input type="text" id="admin-version" placeholder="e.g. v1.0.4" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-cyan-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-sub font-semibold text-slate-400 mb-1">Ukuran File</label>
+                        <input type="text" id="admin-size" placeholder="e.g. 45 MB" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-cyan-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-sub font-semibold text-slate-400 mb-1">URL Icon Image</label>
+                    <input type="text" id="admin-icon" placeholder="https://..." class="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-cyan-500">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-sub font-semibold text-cyan-400 mb-1">Real Target Download URL</label>
+                    <input type="url" id="admin-download-url" placeholder="https://www.mediafire.com/file/example" class="w-full bg-slate-950 border border-cyan-500/40 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-cyan-400">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-sub font-semibold text-slate-400 mb-1">Deskripsi Singkat</label>
+                    <textarea id="admin-desc" rows="3" placeholder="Jelaskan fitur-fitur APK..." class="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-cyan-500"></textarea>
+                </div>
+
+                <div class="flex space-x-3 pt-2">
+                    <button onclick="saveApkItem()" class="flex-1 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-sub font-bold py-2.5 rounded-lg transition">
+                        SIMPAN ITEM
+                    </button>
+                    <button onclick="resetAdminForm()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-sub font-semibold px-4 py-2.5 rounded-lg transition">
+                        BATAL
+                    </button>
+                </div>
+            </div>
+
+            <!-- APK Data Table -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+                <div class="p-4 border-b border-slate-800 font-sub font-bold text-slate-300">
+                    Daftar APK Tersedia
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm text-slate-400">
+                        <thead class="bg-slate-950 text-slate-300 font-sub text-xs uppercase">
+                            <tr>
+                                <th class="p-4">App</th>
+                                <th class="p-4">Kategori</th>
+                                <th class="p-4">Versi</th>
+                                <th class="p-4">Link Tujuan</th>
+                                <th class="p-4 text-center">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-table-body" class="divide-y divide-slate-800/60">
+                            <!-- Populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODAL: ADMIN PASSWORD AUTH -->
+    <div id="admin-auth-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-purple-500/40 rounded-2xl max-w-md w-full p-6 shadow-2xl relative neon-border-purple space-y-5">
+            <button onclick="closeAdminAuthModal()" class="absolute top-4 right-4 text-slate-500 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="text-center space-y-2">
+                <div class="w-14 h-14 bg-purple-500/10 border border-purple-500/30 text-purple-400 rounded-full flex items-center justify-center mx-auto">
+                    <i data-lucide="lock" class="w-7 h-7"></i>
+                </div>
+                <h3 class="font-cyber text-xl font-bold text-white">PROTECTED ACCESS</h3>
+                <p class="text-xs text-slate-400 font-sub">Masukkan password/PIN untuk mengakses Admin Panel BimzTools.</p>
+            </div>
+
+            <div class="space-y-3">
+                <input type="password" id="admin-pin-input" placeholder="Enter Admin Password..." 
+                    class="w-full bg-slate-950 border border-purple-500/30 rounded-xl px-4 py-3 text-center text-white text-lg tracking-widest focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-purple-400">
+                <p id="auth-error-msg" class="text-xs text-red-400 text-center hidden font-sub">Password salah! Silakan coba lagi.</p>
+            </div>
+
+            <div class="flex space-x-3">
+                <button onclick="verifyAdminPassword()" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-sub font-bold py-3 rounded-xl transition shadow-lg shadow-purple-600/30">
+                    UNLOCK ADMIN
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-500 font-sub">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 BimzTools Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK (Modular Version) -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { 
+            getFirestore, 
+            collection, 
+            onSnapshot, 
+            addDoc, 
+            updateDoc, 
+            deleteDoc, 
+            doc 
+        } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+        // TODO: GANTI DENGAN FIREBASE CONFIG KAMU SENDIRI
+        const firebaseConfig = {
+            apiKey: "AIzaSyADwQ2ubk7zm7FVql7WNrety6xDjtxafEY",
+            authDomain: "bmztools.firebaseapp.com",
+            projectId: "bmztools",
+            storageBucket: "bmztools.firebasestorage.app",
+            messagingSenderId: "241860648624",
+            appId: "1:241860648624:web:706fee44d3d1e2d9e4e575"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const apkCollection = collection(db, "apks");
+
+        // Global State
+        window.apkList = [];
+        const DEFAULT_PASS = "bimz123";
+        let isAdminAuthenticated = false;
+        let selectedCategory = "ALL";
+        let currentDetailApk = null;
+        let timerInterval = null;
+
+        // Realtime Data Listener dari Firebase
+        onSnapshot(apkCollection, (snapshot) => {
+            window.apkList = snapshot.docs.map(doc => ({
+                id: doc.id,
+                ...doc.data()
+            }));
+            
+            // Re-render UI otomatis jika data di database berubah
+            filterApps();
+            if (!document.getElementById('view-admin').classList.contains('hidden')) {
+                renderAdminTable();
+            }
+        });
+
+        // Functions Expose to Global Window
+        window.saveApkItem = async function() {
+            const id = document.getElementById('admin-apk-id').value;
+            const title = document.getElementById('admin-title').value.trim();
+            const category = document.getElementById('admin-category').value;
+            const version = document.getElementById('admin-version').value.trim();
+            const size = document.getElementById('admin-size').value.trim();
+            const icon = document.getElementById('admin-icon').value.trim() || 'https://placehold.co/300x300/0f172a/06b6d4?text=APK';
+            const downloadUrl = document.getElementById('admin-download-url').value.trim();
+            const description = document.getElementById('admin-desc').value.trim();
+
+            if (!title || !downloadUrl) {
+                alert("Harap isi Nama APK dan Link Download Tujuan!");
+                return;
+            }
+
+            const payload = { title, category, version, size, icon, downloadUrl, description };
+
+            try {
+                if (id) {
+                    // Update ke Firestore
+                    const apkRef = doc(db, "apks", id);
+                    await updateDoc(apkRef, payload);
+                } else {
+                    // Simpan data baru ke Firestore
+                    await addDoc(apkCollection, payload);
+                }
+                resetAdminForm();
+            } catch (error) {
+                console.error("Error saving document: ", error);
+                alert("Gagal menyimpan data ke Firestore!");
+            }
+        };
+
+        window.deleteApkItem = async function(id) {
+            if (confirm("Apakah Anda yakin ingin menghapus item APK ini?")) {
+                try {
+                    await deleteDoc(doc(db, "apks", id));
+                } catch (error) {
+                    console.error("Error deleting document: ", error);
+                    alert("Gagal menghapus data dari Firestore!");
+                }
+            }
+        };
+
+        window.navigateTo = function(viewName, apkId = null) {
+            document.getElementById('view-home').classList.add('hidden');
+            document.getElementById('view-detail').classList.add('hidden');
+            document.getElementById('view-admin').classList.add('hidden');
+
+            if (viewName === 'home') {
+                document.getElementById('view-home').classList.remove('hidden');
+                filterApps();
+            } else if (viewName === 'detail' && apkId) {
+                showApkDetail(apkId);
+                document.getElementById('view-detail').classList.remove('hidden');
+            } else if (viewName === 'admin') {
+                if (!isAdminAuthenticated) {
+                    openAdminAuthModal();
+                    document.getElementById('view-home').classList.remove('hidden');
+                    return;
+                }
+                document.getElementById('view-admin').classList.remove('hidden');
+                renderAdminTable();
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Trigger pemanggilan ulang unit iklan AdSense untuk halaman SPA saat berpindah tampilan
+            try {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {}
+        };
+
+        window.setCategory = function(cat) {
+            selectedCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-cyan-500', 'text-slate-950');
+                btn.classList.add('bg-slate-900', 'text-slate-300');
+            });
+            event.target.classList.remove('bg-slate-900', 'text-slate-300');
+            event.target.classList.add('bg-cyan-500', 'text-slate-950');
+            filterApps();
+        };
+
+        window.filterApps = function() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const filtered = window.apkList.filter(apk => {
+                const matchCategory = selectedCategory === 'ALL' || apk.category === selectedCategory;
+                const matchQuery = (apk.title || '').toLowerCase().includes(query) || (apk.description || '').toLowerCase().includes(query);
+                return matchCategory && matchQuery;
+            });
+            renderApkGrid(filtered);
+        };
+
+        function renderApkGrid(items) {
+            const grid = document.getElementById('apk-grid');
+            const noResult = document.getElementById('no-result');
+            grid.innerHTML = '';
+
+            if (items.length === 0) {
+                noResult.classList.remove('hidden');
+                return;
+            }
+            noResult.classList.add('hidden');
+
+            items.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "bg-slate-900 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-5 shadow-lg transition duration-300 hover:-translate-y-1 flex flex-col justify-between";
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="${item.icon}" alt="${item.title}" class="w-16 h-16 rounded-xl object-cover border border-slate-700" onerror="this.src='https://placehold.co/300x300/0f172a/06b6d4?text=APK'">
+                            <div>
+                                <h3 class="font-cyber font-semibold text-white text-base line-clamp-1">${item.title}</h3>
+                                <span class="bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-[11px] px-2 py-0.5 rounded font-mono">${item.version || ''}</span>
+                                <span class="bg-slate-800 text-slate-400 text-[11px] px-2 py-0.5 rounded font-mono ml-1">${item.size || ''}</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-400 line-clamp-2 mb-4 font-sub leading-relaxed">${item.description || ''}</p>
+                    </div>
+                    <button onclick="navigateTo('detail', '${item.id}')" class="w-full bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-sub font-bold py-2.5 rounded-xl transition flex items-center justify-center space-x-2">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        <span>DETAIL & DOWNLOAD</span>
+                    </button>
+                `;
+                grid.appendChild(card);
+            });
+            lucide.createIcons();
+        }
+
+        function showApkDetail(id) {
+            currentDetailApk = window.apkList.find(a => a.id === id);
+            if (!currentDetailApk) {
+                navigateTo('home');
+                return;
+            }
+
+            document.getElementById('detail-title').innerText = currentDetailApk.title;
+            document.getElementById('detail-icon').src = currentDetailApk.icon;
+            document.getElementById('detail-version').innerText = currentDetailApk.version || '';
+            document.getElementById('detail-size').innerText = currentDetailApk.size || '';
+            document.getElementById('detail-category').innerText = currentDetailApk.category || '';
+            document.getElementById('detail-desc').innerText = currentDetailApk.description || '';
+
+            if (timerInterval) clearInterval(timerInterval);
+            document.getElementById('download-idle-state').classList.remove('hidden');
+            document.getElementById('download-active-state').classList.add('hidden');
+            document.getElementById('download-completed-state').classList.add('hidden');
+            lucide.createIcons();
+        }
+
+        window.startDownloadProcess = function() {
+            if (!currentDetailApk || !currentDetailApk.downloadUrl) return;
+
+            document.getElementById('download-idle-state').classList.add('hidden');
+            document.getElementById('download-active-state').classList.remove('hidden');
+
+            let countdown = 5;
+            const timerElem = document.getElementById('timer-seconds');
+            const statusElem = document.getElementById('timer-status');
+            timerElem.innerText = countdown;
+
+            timerInterval = setInterval(() => {
+                countdown--;
+                timerElem.innerText = countdown;
+                statusElem.innerHTML = `Sedang menyiapkan file... Mohon tunggu <span class="text-cyan-400 font-bold">${countdown} detik</span>`;
+
+                if (countdown <= 0) {
+                    clearInterval(timerInterval);
+                    document.getElementById('download-active-state').classList.add('hidden');
+                    document.getElementById('download-completed-state').classList.remove('hidden');
+                    document.getElementById('manual-download-btn').href = currentDetailApk.downloadUrl;
+                    window.open(currentDetailApk.downloadUrl, '_blank');
+                }
+            }, 1000);
+        };
+
+        window.openAdminAuthModal = function() {
+            if (isAdminAuthenticated) {
+                navigateTo('admin');
+                return;
+            }
+            document.getElementById('admin-pin-input').value = '';
+            document.getElementById('auth-error-msg').classList.add('hidden');
+            document.getElementById('admin-auth-modal').classList.remove('hidden');
+        };
+
+        window.closeAdminAuthModal = function() {
+            document.getElementById('admin-auth-modal').classList.add('hidden');
+        };
+
+        window.verifyAdminPassword = function() {
+            const inputPin = document.getElementById('admin-pin-input').value;
+            if (inputPin === DEFAULT_PASS) {
+                isAdminAuthenticated = true;
+                closeAdminAuthModal();
+                navigateTo('admin');
+            } else {
+                document.getElementById('auth-error-msg').classList.remove('hidden');
+            }
+        };
+
+        window.lockAdminSession = function() {
+            isAdminAuthenticated = false;
+            navigateTo('home');
+        };
+
+        function renderAdminTable() {
+            const tbody = document.getElementById('admin-table-body');
+            tbody.innerHTML = '';
+
+            window.apkList.forEach(apk => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-950/40 transition";
+                tr.innerHTML = `
+                    <td class="p-4 font-semibold text-white flex items-center space-x-2">
+                        <img src="${apk.icon}" class="w-8 h-8 rounded object-cover">
+                        <span>${apk.title}</span>
+                    </td>
+                    <td class="p-4"><span class="bg-slate-800 text-cyan-400 text-xs px-2 py-0.5 rounded">${apk.category}</span></td>
+                    <td class="p-4 font-mono text-xs">${apk.version || '-'}</td>
+                    <td class="p-4 font-mono text-xs text-slate-400 max-w-[150px] truncate">${apk.downloadUrl}</td>
+                    <td class="p-4 text-center">
+                        <div class="flex items-center justify-center space-x-2">
+                            <button onclick="editApkItem('${apk.id}')" class="p-1.5 bg-blue-500/20 text-blue-400 rounded hover:bg-blue-500/30">
+                                <i data-lucide="edit" class="w-4 h-4"></i>
+                            </button>
+                            <button onclick="deleteApkItem('${apk.id}')" class="p-1.5 bg-red-500/20 text-red-400 rounded hover:bg-red-500/30">
+                                <i data-lucide="trash-2" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+            lucide.createIcons();
+        }
+
+        window.editApkItem = function(id) {
+            const item = window.apkList.find(a => a.id === id);
+            if (!item) return;
+
+            document.getElementById('admin-apk-id').value = item.id;
+            document.getElementById('admin-title').value = item.title;
+            document.getElementById('admin-category').value = item.category;
+            document.getElementById('admin-version').value = item.version || '';
+            document.getElementById('admin-size').value = item.size || '';
+            document.getElementById('admin-icon').value = item.icon || '';
+            document.getElementById('admin-download-url').value = item.downloadUrl || '';
+            document.getElementById('admin-desc').value = item.description || '';
+
+            document.getElementById('form-title').innerText = "Edit APK Item";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        window.resetAdminForm = function() {
+            document.getElementById('admin-apk-id').value = '';
+            document.getElementById('admin-title').value = '';
+            document.getElementById('admin-version').value = '';
+            document.getElementById('admin-size').value = '';
+            document.getElementById('admin-icon').value = '';
+            document.getElementById('admin-download-url').value = '';
+            document.getElementById('admin-desc').value = '';
+            document.getElementById('form-title').innerText = "Tambah APK Baru";
+        };
+
+        window.onload = function() {
+            lucide.createIcons();
+            setTimeout(() => {
+                const splash = document.getElementById('splash-screen');
+                splash.classList.add('opacity-0');
+                setTimeout(() => splash.remove(), 500);
+            }, 1200);
+        };
+    </script>
+</body>
+</html>
